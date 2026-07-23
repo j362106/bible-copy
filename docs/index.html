@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bible Transcription — Write Scripture by Hand (Free)</title>
+<meta name="description" content="A quiet desktop app for copying the Bible one verse at a time. Free & public domain. Available in English, Español, 한국어. For Windows PC.">
+<style>
+  :root{--purple:#7f77dd;--purple-dark:#3c3489;--purple-light:#efeefe;--ink:#1f1d2b;--muted:#6b6a78;--bg:#faf9f6;--card:#fff;--border:#ecebe6}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);min-height:100vh;display:flex;flex-direction:column;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:760px;margin:0 auto;padding:0 22px;width:100%;flex:1;display:flex;flex-direction:column;justify-content:center}
+  .hero{text-align:center;padding:60px 0 34px}
+  .em{font-size:52px}
+  h1{font-size:clamp(28px,5vw,44px);font-weight:800;letter-spacing:-.02em;margin:14px 0 12px}
+  h1 .g{color:var(--purple)}
+  .sub{font-size:clamp(15px,2.4vw,18px);color:var(--muted);max-width:520px;margin:0 auto}
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:20px 0 8px}
+  .card{display:block;text-decoration:none;color:inherit;background:var(--card);border:1px solid var(--border);border-radius:16px;padding:24px 18px;text-align:center;transition:transform .12s,box-shadow .12s,border-color .12s}
+  .card:hover{transform:translateY(-3px);box-shadow:0 16px 34px rgba(40,36,70,.10);border-color:var(--purple)}
+  .flag{font-size:34px}
+  .card .name{font-weight:800;font-size:18px;margin:8px 0 3px}
+  .card .ver{font-size:12.5px;color:var(--muted)}
+  .card .go{display:inline-block;margin-top:14px;font-size:13px;font-weight:700;color:var(--purple-dark);background:var(--purple-light);border-radius:999px;padding:6px 14px}
+  .footnote{text-align:center;color:var(--muted);font-size:13px;margin-top:26px}
+  footer{border-top:1px solid var(--border);padding:22px;font-size:12.5px;color:var(--muted);text-align:center}
+  footer a{color:var(--purple-dark);text-decoration:none;font-weight:600}
+  @media(max-width:560px){.cards{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="hero">
+    <div class="em">📖</div>
+    <h1>Write Scripture <span class="g">by hand.</span></h1>
+    <p class="sub">A quiet, distraction-free app for copying the Bible one verse at a time. Free &amp; public domain — for Windows PC.</p>
+  </div>
+  <div class="cards">
+    <a class="card" href="en/">
+      <div class="flag">🇺🇸</div>
+      <div class="name">English</div>
+      <div class="ver">World English Bible</div>
+      <span class="go">Open →</span>
+    </a>
+    <a class="card" href="es/">
+      <div class="flag">🇪🇸</div>
+      <div class="name">Español</div>
+      <div class="ver">Reina-Valera 1858</div>
+      <span class="go">Abrir →</span>
+    </a>
+    <a class="card" href="https://github.com/j362106/bible-copy/releases/download/v1.0.0/bible_copy.exe">
+      <div class="flag">🇰🇷</div>
+      <div class="name">한국어</div>
+      <div class="ver">개역한글</div>
+      <span class="go">다운로드 ↓</span>
+    </a>
+  </div>
+  <p class="footnote">Every version is free, requires no account, and keeps your writing on your own computer.</p>
+</div>
+<footer>Free &amp; open · Public-domain Bible texts · <a href="https://github.com/j362106/bible-copy/releases">GitHub releases</a></footer>
+</body>
+</html>
