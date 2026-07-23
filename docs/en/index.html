@@ -44,8 +44,15 @@
   .pane.write .empty{color:#c9c7d6}
   .caret{display:inline-block;width:2px;height:17px;background:var(--purple);vertical-align:-3px;animation:bl 1s steps(1) infinite;margin-left:1px}
   @keyframes bl{50%{opacity:0}}
+  /* story */
+  .story{max-width:640px;margin:66px auto 0;text-align:center;padding:0 6px}
+  .story .mark{font-size:28px;color:var(--purple);opacity:.85;margin-bottom:12px}
+  .story p{font-size:clamp(16px,2.4vw,19px);line-height:1.95;color:#3a3648;margin-bottom:18px}
+  .story .big{font-size:clamp(19px,2.8vw,24px);font-weight:800;color:var(--ink)}
+  .story .em{color:var(--purple-dark);font-weight:800}
+  .story .sign{font-size:13.5px;color:var(--muted)}
   /* features */
-  .features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:54px 0 10px}
+  .features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:60px 0 10px}
   .feat{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:20px}
   .feat .ic{font-size:22px;margin-bottom:8px}
   .feat h3{font-size:15px;margin-bottom:4px}
@@ -104,6 +111,14 @@
       </div>
     </div>
   </div>
+
+  <section class="story">
+    <div class="mark">✍️</div>
+    <p class="big">Do you find it hard to read the Bible?<br><span class="em">It's not your fault.</span></p>
+    <p>We're modern people, conditioned to keep scrolling and moving through everything. I'm the same.</p>
+    <p>But I found that when I type out Scripture word by word and sit with it, I focus — and understand — so much more deeply. <span class="em">So I built this.</span></p>
+    <p class="sign">— from the person who made it</p>
+  </section>
 
   <section class="features">
     <div class="feat"><div class="ic">🕊️</div><h3>Distraction-free</h3><p>Just the Word and your writing, side by side. Nothing else pulling at your attention.</p></div>
