@@ -10,7 +10,9 @@
 <style>
   :root{--purple:#7f77dd;--purple-dark:#3c3489;--purple-light:#efeefe;--ink:#1f1d2b;--muted:#6b6a78;--bg:#faf9f6;--card:#fff;--border:#ecebe6}
   *{box-sizing:border-box;margin:0;padding:0}
-  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;word-break:keep-all;overflow-wrap:break-word}
+  @media(min-width:641px){br.m{display:none}}
+  @media(max-width:400px){.btn{font-size:16px;padding:15px 22px}}
   .wrap{max-width:1040px;margin:0 auto;padding:0 22px}
   a{color:inherit}
   .top{display:flex;align-items:center;justify-content:space-between;padding:22px 0}
@@ -24,7 +26,7 @@
   h1 .g{color:var(--purple)}
   .sub{font-size:clamp(16px,2.4vw,20px);color:var(--muted);max-width:620px;margin:0 auto 30px}
   .cta{display:inline-flex;flex-direction:column;align-items:center;gap:8px}
-  .btn{display:inline-flex;align-items:center;gap:10px;background:var(--purple);color:#fff;font-size:18px;font-weight:700;text-decoration:none;padding:16px 30px;border-radius:14px;box-shadow:0 10px 26px rgba(127,119,221,.34);transition:transform .12s,box-shadow .12s}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--purple);color:#fff;font-size:18px;font-weight:700;line-height:1.2;white-space:nowrap;text-decoration:none;padding:16px 28px;border-radius:14px;box-shadow:0 10px 26px rgba(127,119,221,.34);transition:transform .12s,box-shadow .12s}
   .btn:hover{transform:translateY(-2px);box-shadow:0 14px 32px rgba(127,119,221,.42)}
   .btn .win{font-size:22px}
   .cta small{color:var(--muted);font-size:13px}
@@ -85,9 +87,9 @@
     <p class="sub">A quiet app for copying the Bible, one verse at a time. The verse is on the left, and you type it on the right — with soft music and automatic saving.</p>
     <div class="cta">
       <a class="btn" href="https://github.com/j362106/bible-copy/releases/download/english-v1.0/Bible_Transcription_WEB.exe">
-        <span class="win">⊞</span> Download for Windows — Free
+        <span class="win">⊞</span> Download for Windows
       </a>
-      <small>No account · No ads · Everything stays on your computer</small>
+      <small>No account · No ads ·<br class="m">everything stays on your computer</small>
     </div>
   </section>
 
@@ -115,7 +117,7 @@
   <section class="story">
     <div class="mark">✍️</div>
     <p class="big">Do you find it hard to read the Bible?<br><span class="em">It's not your fault.</span></p>
-    <p>We're all used to living fast and staying busy. I'm the same.</p>
+    <p>We're all used to living fast and staying busy.<br class="m">I'm the same.</p>
     <p>But when I type the Bible word by word, I slow down. I focus more, and the words mean more to me. <span class="em">So I made this app.</span></p>
     <p class="sign">— from the person who made it</p>
   </section>
@@ -136,7 +138,7 @@
   </div>
 
   <div class="section-cta">
-    <a class="btn" href="https://github.com/j362106/bible-copy/releases/download/english-v1.0/Bible_Transcription_WEB.exe"><span class="win">⊞</span> Download for Windows — Free</a>
+    <a class="btn" href="https://github.com/j362106/bible-copy/releases/download/english-v1.0/Bible_Transcription_WEB.exe"><span class="win">⊞</span> Download for Windows</a>
     <p style="margin-top:12px;font-size:13px;color:var(--muted)">For Windows PC · World English Bible (Public Domain)</p>
   </div>
 
