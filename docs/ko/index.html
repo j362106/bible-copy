@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>성경 필사 — 말씀을 손으로 한 절씩 (무료, Windows)</title>
+<meta name="description" content="조용히 집중해서 성경을 한 절씩 필사하는 데스크탑 앱. 개역한글, 무료, 퍼블릭 도메인, 계정 불필요. Windows PC용.">
+<meta property="og:title" content="성경 필사 — 말씀을 손으로 한 절씩">
+<meta property="og:description" content="성경을 한 절씩 필사하세요. 무료 · 퍼블릭 도메인 · Windows PC용.">
+<style>
+  :root{--purple:#7f77dd;--purple-dark:#3c3489;--purple-light:#efeefe;--ink:#1f1d2b;--muted:#6b6a78;--bg:#faf9f6;--card:#fff;--border:#ecebe6}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Malgun Gothic','Apple SD Gothic Neo',Roboto,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+  a{color:inherit}
+  .top{display:flex;align-items:center;justify-content:space-between;padding:22px 0}
+  .brand{display:flex;align-items:center;gap:9px;font-weight:800;font-size:18px}
+  .brand .em{font-size:22px}
+  .lang{font-size:13px;color:var(--muted);text-decoration:none;border:1px solid var(--border);border-radius:999px;padding:6px 13px;background:#fff}
+  .lang:hover{border-color:var(--purple)}
+  .hero{text-align:center;padding:40px 0 24px}
+  .badge{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.02em;color:var(--purple-dark);background:var(--purple-light);border-radius:999px;padding:6px 14px;margin-bottom:20px}
+  h1{font-size:clamp(30px,5vw,50px);line-height:1.2;letter-spacing:-.02em;font-weight:800;margin-bottom:16px}
+  h1 .g{color:var(--purple)}
+  .sub{font-size:clamp(16px,2.4vw,20px);color:var(--muted);max-width:600px;margin:0 auto 30px}
+  .cta{display:inline-flex;flex-direction:column;align-items:center;gap:8px}
+  .btn{display:inline-flex;align-items:center;gap:10px;background:var(--purple);color:#fff;font-size:18px;font-weight:700;text-decoration:none;padding:16px 30px;border-radius:14px;box-shadow:0 10px 26px rgba(127,119,221,.34);transition:transform .12s,box-shadow .12s}
+  .btn:hover{transform:translateY(-2px);box-shadow:0 14px 32px rgba(127,119,221,.42)}
+  .btn .win{font-size:22px}
+  .cta small{color:var(--muted);font-size:13px}
+  .preview{margin:44px auto 10px;max-width:900px;background:var(--card);border:1px solid var(--border);border-radius:18px;box-shadow:0 30px 60px rgba(40,36,70,.10);overflow:hidden}
+  .pv-bar{display:flex;align-items:center;gap:7px;padding:12px 16px;border-bottom:1px solid var(--border);background:#fcfbf9}
+  .dot{width:11px;height:11px;border-radius:50%}
+  .pv-title{margin-left:10px;font-size:13px;font-weight:700;color:var(--muted)}
+  .pv-body{display:grid;grid-template-columns:1fr 1fr;gap:0}
+  .pane{padding:20px 22px;min-height:230px}
+  .pane+.pane{border-left:1px solid var(--border)}
+  .pane h4{font-size:12px;letter-spacing:.06em;color:var(--muted);margin-bottom:14px;font-weight:800}
+  .vs{display:flex;gap:9px;margin-bottom:12px;font-size:15px}
+  .vs .n{color:var(--purple);font-weight:800;font-size:12px;padding-top:3px;min-width:14px}
+  .vs .t{color:#2b2836}
+  .pane.write .empty{color:#c9c7d6}
+  .caret{display:inline-block;width:2px;height:17px;background:var(--purple);vertical-align:-3px;animation:bl 1s steps(1) infinite;margin-left:1px}
+  @keyframes bl{50%{opacity:0}}
+  .features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:54px 0 10px}
+  .feat{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:20px}
+  .feat .ic{font-size:22px;margin-bottom:8px}
+  .feat h3{font-size:15px;margin-bottom:4px}
+  .feat p{font-size:13.5px;color:var(--muted)}
+  .note{margin:40px 0;background:#fffdf5;border:1px solid #f0e6c8;border-radius:14px;padding:20px 22px}
+  .note h3{font-size:15px;margin-bottom:8px;display:flex;align-items:center;gap:8px}
+  .note ol{margin:6px 0 0 20px;font-size:14px;color:#5c5647}
+  .note li{margin:3px 0}
+  .section-cta{text-align:center;padding:20px 0 10px}
+  footer{border-top:1px solid var(--border);margin-top:50px;padding:26px 0 50px;font-size:13px;color:var(--muted);text-align:center}
+  footer a{color:var(--purple-dark);text-decoration:none;font-weight:600}
+  @media(max-width:640px){.features{grid-template-columns:1fr}.pv-body{grid-template-columns:1fr}.pane+.pane{border-left:none;border-top:1px solid var(--border)}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <div class="brand"><span class="em">📖</span> 성경 필사</div>
+    <a class="lang" href="../en/">English →</a>
+  </div>
+
+  <section class="hero">
+    <span class="badge">개역한글 · Public Domain</span>
+    <h1>말씀을 손으로,<br><span class="g">한 절씩 새기다.</span></h1>
+    <p class="sub">조용히 집중해서 성경을 필사하는 앱입니다. 왼쪽엔 원문, 오른쪽엔 내가 쓰는 화면 — 잔잔한 배경 음악과 자동 저장까지.</p>
+    <div class="cta">
+      <a class="btn" href="https://github.com/j362106/bible-copy/releases/download/v1.0.0/bible_copy.exe">
+        <span class="win">⊞</span> Windows용 다운로드 — 무료
+      </a>
+      <small>계정 없음 · 광고 없음 · 모든 기록은 내 컴퓨터에만 저장</small>
+    </div>
+  </section>
+
+  <div class="preview" aria-hidden="true">
+    <div class="pv-bar">
+      <span class="dot" style="background:#ff5f57"></span><span class="dot" style="background:#febc2e"></span><span class="dot" style="background:#28c840"></span>
+      <span class="pv-title">📖 성경 필사 — 창세기 1장</span>
+    </div>
+    <div class="pv-body">
+      <div class="pane">
+        <h4>📖 원문</h4>
+        <div class="vs"><span class="n">1</span><span class="t">태초에 하나님이 천지를 창조하시니라</span></div>
+        <div class="vs"><span class="n">2</span><span class="t">땅이 혼돈하고 공허하며 흑암이 깊음 위에 있고 하나님의 신은 수면에 운행하시니라</span></div>
+        <div class="vs"><span class="n">3</span><span class="t">하나님이 가라사대 빛이 있으라 하시매 빛이 있었고</span></div>
+      </div>
+      <div class="pane write">
+        <h4>✍️ 필사</h4>
+        <div class="vs"><span class="n">1</span><span class="t">태초에 하나님이 천지를 창조하시니라</span></div>
+        <div class="vs"><span class="n">2</span><span class="t">땅이 혼돈하고 공허하며 흑암이 깊음 위에 있고<span class="caret"></span></span></div>
+        <div class="vs"><span class="n">3</span><span class="empty">—</span></div>
+      </div>
+    </div>
+  </div>
+
+  <section class="features">
+    <div class="feat"><div class="ic">🕊️</div><h3>온전히 집중</h3><p>오직 말씀과 내 손글씨만. 주의를 끄는 다른 것 없이 조용히 필사에만 집중합니다.</p></div>
+    <div class="feat"><div class="ic">🎵</div><h3>잔잔한 음악</h3><p>필사하는 동안 마음을 가라앉혀 주는 배경 음악을 켤 수 있습니다.</p></div>
+    <div class="feat"><div class="ic">💾</div><h3>자동 저장 · 비공개</h3><p>필사 기록은 자동으로 저장되고 내 컴퓨터를 벗어나지 않습니다. 로그인도, 클라우드도 없습니다.</p></div>
+  </section>
+
+  <div class="note">
+    <h3>🛡️ 처음 실행하시나요?</h3>
+    <p style="font-size:14px;color:#5c5647">작은 무료 프로그램이라, 실행하면 Windows가 파란색 “Windows의 PC 보호” 화면을 띄울 수 있습니다. 안전합니다 — 오픈소스, 퍼블릭 도메인 앱입니다. 이렇게 하세요:</p>
+    <ol>
+      <li><b>추가 정보</b> 클릭</li>
+      <li><b>실행</b> 클릭</li>
+    </ol>
+  </div>
+
+  <div class="section-cta">
+    <a class="btn" href="https://github.com/j362106/bible-copy/releases/download/v1.0.0/bible_copy.exe"><span class="win">⊞</span> Windows용 다운로드 — 무료</a>
+    <p style="margin-top:12px;font-size:13px;color:var(--muted)">Windows PC용 · 개역한글 (Public Domain)</p>
+  </div>
+
+  <footer>
+    무료 · 오픈소스 · 성경 본문: 개역한글 (Public Domain) ·
+    <a href="https://github.com/j362106/bible-copy/releases">GitHub에서 모든 버전 보기</a><br>
+    English &amp; Español 버전도 있어요 → <a href="../">전체 보기</a>
+  </footer>
+</div>
+</body>
+</html>
