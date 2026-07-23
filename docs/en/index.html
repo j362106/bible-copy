@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bible Transcription — Write Scripture by Hand (Free, Windows)</title>
+<meta name="description" content="A quiet, distraction-free desktop app for copying the Bible (World English Bible) one verse at a time. Free, public domain, no account. For Windows PC.">
+<meta property="og:title" content="Bible Transcription — Write Scripture by Hand">
+<meta property="og:description" content="Copy the Bible one verse at a time. Free & public domain. For Windows PC.">
+<style>
+  :root{--purple:#7f77dd;--purple-dark:#3c3489;--purple-light:#efeefe;--ink:#1f1d2b;--muted:#6b6a78;--bg:#faf9f6;--card:#fff;--border:#ecebe6}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+  a{color:inherit}
+  .top{display:flex;align-items:center;justify-content:space-between;padding:22px 0}
+  .brand{display:flex;align-items:center;gap:9px;font-weight:800;font-size:18px}
+  .brand .em{font-size:22px}
+  .lang{font-size:13px;color:var(--muted);text-decoration:none;border:1px solid var(--border);border-radius:999px;padding:6px 13px;background:#fff}
+  .lang:hover{border-color:var(--purple)}
+  .hero{text-align:center;padding:40px 0 24px}
+  .badge{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.02em;color:var(--purple-dark);background:var(--purple-light);border-radius:999px;padding:6px 14px;margin-bottom:20px}
+  h1{font-size:clamp(30px,5vw,50px);line-height:1.12;letter-spacing:-.02em;font-weight:800;margin-bottom:16px}
+  h1 .g{color:var(--purple)}
+  .sub{font-size:clamp(16px,2.4vw,20px);color:var(--muted);max-width:620px;margin:0 auto 30px}
+  .cta{display:inline-flex;flex-direction:column;align-items:center;gap:8px}
+  .btn{display:inline-flex;align-items:center;gap:10px;background:var(--purple);color:#fff;font-size:18px;font-weight:700;text-decoration:none;padding:16px 30px;border-radius:14px;box-shadow:0 10px 26px rgba(127,119,221,.34);transition:transform .12s,box-shadow .12s}
+  .btn:hover{transform:translateY(-2px);box-shadow:0 14px 32px rgba(127,119,221,.42)}
+  .btn .win{font-size:22px}
+  .cta small{color:var(--muted);font-size:13px}
+  /* preview mockup */
+  .preview{margin:44px auto 10px;max-width:900px;background:var(--card);border:1px solid var(--border);border-radius:18px;box-shadow:0 30px 60px rgba(40,36,70,.10);overflow:hidden}
+  .pv-bar{display:flex;align-items:center;gap:7px;padding:12px 16px;border-bottom:1px solid var(--border);background:#fcfbf9}
+  .dot{width:11px;height:11px;border-radius:50%}
+  .pv-title{margin-left:10px;font-size:13px;font-weight:700;color:var(--muted)}
+  .pv-body{display:grid;grid-template-columns:1fr 1fr;gap:0}
+  .pane{padding:20px 22px;min-height:230px}
+  .pane+.pane{border-left:1px solid var(--border)}
+  .pane h4{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:14px;font-weight:800}
+  .vs{display:flex;gap:9px;margin-bottom:12px;font-size:15px}
+  .vs .n{color:var(--purple);font-weight:800;font-size:12px;padding-top:3px;min-width:14px}
+  .vs .t{color:#2b2836}
+  .pane.write .t{color:#2b2836}
+  .pane.write .empty{color:#c9c7d6}
+  .caret{display:inline-block;width:2px;height:17px;background:var(--purple);vertical-align:-3px;animation:bl 1s steps(1) infinite;margin-left:1px}
+  @keyframes bl{50%{opacity:0}}
+  /* features */
+  .features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:54px 0 10px}
+  .feat{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:20px}
+  .feat .ic{font-size:22px;margin-bottom:8px}
+  .feat h3{font-size:15px;margin-bottom:4px}
+  .feat p{font-size:13.5px;color:var(--muted)}
+  /* how to run */
+  .note{margin:40px 0;background:#fffdf5;border:1px solid #f0e6c8;border-radius:14px;padding:20px 22px}
+  .note h3{font-size:15px;margin-bottom:8px;display:flex;align-items:center;gap:8px}
+  .note ol{margin:6px 0 0 18px;font-size:14px;color:#5c5647}
+  .note li{margin:3px 0}
+  .section-cta{text-align:center;padding:20px 0 10px}
+  footer{border-top:1px solid var(--border);margin-top:50px;padding:26px 0 50px;font-size:13px;color:var(--muted);text-align:center}
+  footer a{color:var(--purple-dark);text-decoration:none;font-weight:600}
+  @media(max-width:640px){
+    .features{grid-template-columns:1fr}
+    .pv-body{grid-template-columns:1fr}
+    .pane+.pane{border-left:none;border-top:1px solid var(--border)}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <div class="brand"><span class="em">📖</span> Bible Transcription</div>
+    <a class="lang" href="../es/">Español →</a>
+  </div>
+
+  <section class="hero">
+    <span class="badge">World English Bible · Public Domain</span>
+    <h1>Write Scripture by hand,<br><span class="g">one verse at a time.</span></h1>
+    <p class="sub">A quiet, distraction-free app for copying the Bible. The verse on the left, your own writing on the right — with soft background music and automatic saving.</p>
+    <div class="cta">
+      <a class="btn" href="https://github.com/j362106/bible-copy/releases/download/english-v1.0/Bible_Transcription_WEB.exe">
+        <span class="win">⊞</span> Download for Windows — Free
+      </a>
+      <small>No account · No ads · Everything stays on your computer</small>
+    </div>
+  </section>
+
+  <div class="preview" aria-hidden="true">
+    <div class="pv-bar">
+      <span class="dot" style="background:#ff5f57"></span><span class="dot" style="background:#febc2e"></span><span class="dot" style="background:#28c840"></span>
+      <span class="pv-title">📖 Bible Transcription — Genesis 1</span>
+    </div>
+    <div class="pv-body">
+      <div class="pane">
+        <h4>📖 Text</h4>
+        <div class="vs"><span class="n">1</span><span class="t">In the beginning, God created the heavens and the earth.</span></div>
+        <div class="vs"><span class="n">2</span><span class="t">The earth was formless and empty. Darkness was on the surface of the deep and God's Spirit was hovering over the surface of the waters.</span></div>
+        <div class="vs"><span class="n">3</span><span class="t">God said, "Let there be light," and there was light.</span></div>
+      </div>
+      <div class="pane write">
+        <h4>✍️ Your writing</h4>
+        <div class="vs"><span class="n">1</span><span class="t">In the beginning, God created the heavens and the earth.</span></div>
+        <div class="vs"><span class="n">2</span><span class="t">The earth was formless and empty. Darkness was on the surface of the deep<span class="caret"></span></span></div>
+        <div class="vs"><span class="n">3</span><span class="empty">—</span></div>
+      </div>
+    </div>
+  </div>
+
+  <section class="features">
+    <div class="feat"><div class="ic">🕊️</div><h3>Distraction-free</h3><p>Just the Word and your writing, side by side. Nothing else pulling at your attention.</p></div>
+    <div class="feat"><div class="ic">🎵</div><h3>Gentle music</h3><p>Optional soft background music to help you slow down and focus as you write.</p></div>
+    <div class="feat"><div class="ic">💾</div><h3>Auto-saved & private</h3><p>Your writing saves automatically and never leaves your computer. No login, no cloud.</p></div>
+  </section>
+
+  <div class="note">
+    <h3>🛡️ First time opening it?</h3>
+    <p style="font-size:14px;color:#5c5647">Because it's a small free program, Windows may show a blue “Windows protected your PC” screen. It's safe — the app is open-source and public domain. Just:</p>
+    <ol>
+      <li>Click <b>More info</b></li>
+      <li>Click <b>Run anyway</b></li>
+    </ol>
+  </div>
+
+  <div class="section-cta">
+    <a class="btn" href="https://github.com/j362106/bible-copy/releases/download/english-v1.0/Bible_Transcription_WEB.exe"><span class="win">⊞</span> Download for Windows — Free</a>
+    <p style="margin-top:12px;font-size:13px;color:var(--muted)">For Windows PC · World English Bible (Public Domain)</p>
+  </div>
+
+  <footer>
+    Free &amp; open · Bible text: World English Bible (Public Domain) ·
+    <a href="https://github.com/j362106/bible-copy/releases">All versions on GitHub</a><br>
+    Also available in <a href="../">한국어 &amp; Español</a>
+  </footer>
+</div>
+</body>
+</html>
